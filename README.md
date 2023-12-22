@@ -29,8 +29,8 @@ chmod +x ./clouduploader
 
 ## What's next?
 Pull requests are welcome! Advanced features still missing, such as:
--[] Allowing multiple file uploads at once
--[] Add a progress bar or percentage upload completion
--[] Provide an option to generate and display a shareable link post-upload
--[] Enable file synchronization
--[] Integrate encryption for added security before the upload
+- [ ] Allowing multiple file uploads at once
+- [ ] Add a progress bar or percentage upload completion
+- [ ] Provide an option to generate and display a shareable link post-upload
+- [ ] Enable file synchronization
+- [ ] Integrate encryption for added security before the upload
