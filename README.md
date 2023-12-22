@@ -27,7 +27,7 @@ I made a blog post in [Hashnode](https://darylgalvez.hashnode.dev/learntocloud-p
     ```bash
     chmod +x ./clouduploader
     ./clouduploader <name of the azure container> </path/to/file.ext>
-```
+    ```
 
 ## What's next?
 Pull requests are welcome! Advanced features still missing, such as:
