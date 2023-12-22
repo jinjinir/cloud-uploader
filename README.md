@@ -17,14 +17,16 @@ I made a blog post in [Hashnode](https://darylgalvez.hashnode.dev/learntocloud-p
    ```
 3. Choose one of the below on how to execute the script.
 
-   Option 1: Run the script by invoking `bash` and passing the script name, the name of your container storage, and the name of the file you want to upload:
-  ```bash
-  bash clouduploader <name of the azure container> </path/to/file.ext>
-  ```
-  Option 2: Make the script executable and pass the script name, the name of your container storage, and the name of the file you want to upload:
-  ```bash
-chmod +x ./clouduploader
-./clouduploader <name of the azure container> </path/to/file.ext>
+    Option 1: Run the script by invoking `bash` and passing the script name, the name of your container storage, and the name of the file you want to upload:
+
+    ```bash
+    bash clouduploader <name of the azure container> </path/to/file.ext>
+    ```
+    Option 2: Make the script executable and pass the script name, the name of your container storage, and the name of the file you want to upload:
+
+    ```bash
+    chmod +x ./clouduploader
+    ./clouduploader <name of the azure container> </path/to/file.ext>
 ```
 
 ## What's next?
