@@ -36,3 +36,9 @@ Pull requests are welcome! Advanced features still missing, such as:
 - [ ] Provide an option to generate and display a shareable link post-upload
 - [ ] Enable file synchronization
 - [ ] Integrate encryption for added security before the upload
+
+## 🤝 Contributing
+
+### Submit a pull request
+
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
