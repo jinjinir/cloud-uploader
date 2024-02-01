@@ -37,7 +37,7 @@ Pull requests are welcome! Advanced features still missing, such as:
 - [ ] Enable file synchronization
 - [ ] Integrate encryption for added security before the upload
 
-## 🤝 Contributing
+## Contributing
 
 ### Submit a pull request
 
