@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $# -eq 0 ]]; then
-    echo '[X] No arguments supplied'
+    echo '[✘] No arguments supplied'
     echo '[!] Usage: ./clouduploader <container-name> <filename1>'
     exit 1
 elif [[ $# -eq 1 ]]; then
@@ -13,7 +13,7 @@ elif [[ $# -ge 3 ]]; then
     echo '[!] Usage: ./clouduploader <container-name> <filename1>'
     exit 1
 elif [[ ! -f $2 ]]; then
-    echo '[X] The file does not exist!'
+    echo '[✘] The file does not exist!'
     exit 1
 else
     does_exist=$(az storage blob exists --container-name $1 --name $2 --auth-mode login | grep exists)
