@@ -21,13 +21,18 @@ else
         echo '[!] The file with the same name already exists in your storage.'
         exit 1
     else
-    if az storage blob upload --container-name $1 -f $2 --auth-mode login; then
-        echo '[✔] File successfully uploaded!'
-        az storage blob list --container-name $1 --output table --auth-mode login
-        exit 1
-    else
-        echo '[✘] Error uploading file!'
-    fi
-    exit 1
+        if az storage blob upload --container-name $1 -f $2 --auth-mode login; then
+            echo '[✔] File successfully uploaded!'
+            if az storage blob list --container-name $1 --output table --auth-mode login &>/dev/null; then
+                echo '[✔] List command successful!'
+                exit 0
+            else
+                echo '[✘] List command failed!'
+                exit 1
+            fi
+        else
+            echo '[✘] Error uploading file!'
+            exit 1
+        fi
     fi
 fi
